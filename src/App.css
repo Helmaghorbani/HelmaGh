@@ -478,21 +478,24 @@ html, body, #root {
 
 @media (max-width: 991px) {
   .navbar .container {
-    flex-direction: column;
-    align-items: flex-end; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
   }
 
   .navbar .brand {
     font-size: 1.2rem;
     padding: 0;
+    order: 1; 
   }
 
   .nav-links {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: flex-end;
     gap: 1rem;
     padding: 0;
-    margin-top: 1rem;
+    margin: 0;
+    order: 2;
   }
 
   .nav-links li a {
@@ -526,14 +529,17 @@ html, body, #root {
   }
 
   .navbar .container {
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
   }
 
   .navbar .brand {
     font-size: 1rem;
     padding: 0;
+    text-align: left;
+    order: 1;
   }
 
   .nav-links {
@@ -541,14 +547,15 @@ html, body, #root {
     justify-content: flex-end;
     gap: 0.6rem;
     padding: 0;
-    margin-top: 0.8rem;
-    width: 100%;
+    margin: 0;
+    width: auto;
     align-items: center;
+    order: 2;
   }
 
   .nav-links li a {
     font-size: 1rem;
-    text-align: right; 
+    text-align: right;
   }
 }
 
