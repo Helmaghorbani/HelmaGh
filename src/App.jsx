@@ -19,12 +19,13 @@ function App() {
     }
   }, []); 
 
-  const[ isOpen , setIsOpen ] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
+    const menuToggle = document.querySelector('.menu-toggle');
+    menuToggle.classList.toggle('open'); 
   };
-
 
   return (
     <>
@@ -32,11 +33,11 @@ function App() {
         <div className="container">
           <div className="brand">HelmaGhorbani</div>
 
-          <div className="menu-toggle " onClick={toggleMenu}>
+          <div className="menu-toggle" onClick={toggleMenu}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
-          </div>
+          </div>  
 
 
           <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
