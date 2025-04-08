@@ -487,6 +487,7 @@ html, body, #root {
     font-size: 1.2rem;
     padding: 0;
     order: 1; 
+    justify-content: flex-start;
   }
 
   .nav-links {
@@ -510,6 +511,7 @@ html, body, #root {
 
   .navbar .brand {
     font-size: 1.1rem;
+    justify-content: flex-start;
   }
 
   .nav-links {
@@ -538,7 +540,7 @@ html, body, #root {
   .navbar .brand {
     font-size: 1rem;
     padding: 0;
-    text-align: left;
+    justify-content: flex-start;
     order: 1;
   }
 
