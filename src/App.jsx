@@ -22,9 +22,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    const menuToggle = document.querySelector('.menu-toggle');
-    menuToggle.classList.toggle('open'); 
+    setIsOpen(!isOpen);  
   };
 
   return (
@@ -33,7 +31,10 @@ function App() {
         <div className="container">
           <div className="brand">HelmaGhorbani</div>
 
-          <div className="menu-toggle" onClick={toggleMenu}>
+          <div
+  className={`menu-toggle ${isOpen ? 'open' : ''}`}
+  onClick={toggleMenu}
+>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
