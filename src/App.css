@@ -535,6 +535,7 @@ html, body, #root {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    flex-wrap: wrap; 
   }
 
   .navbar .brand {
@@ -549,8 +550,8 @@ html, body, #root {
     justify-content: flex-end;
     gap: 0.6rem;
     padding: 0;
-    margin: 0;
-    width: auto;
+    margin-top: 0.8rem; 
+    width: 100%;
     align-items: center;
     order: 2;
   }
