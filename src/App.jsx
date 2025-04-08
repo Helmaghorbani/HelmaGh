@@ -1,7 +1,9 @@
-import React, {useEffect} from 'react'
+import React, {useState,useEffect} from 'react'
 import './assets/script'
 import './App.css'
 import { motion } from 'framer-motion'
+
+
 
 function App() {
   useEffect(() => {
@@ -16,14 +18,28 @@ function App() {
       });
     }
   }, []); 
- 
+
+  const[ isOpen , setIsOpen ] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  };
+
 
   return (
     <>
            <nav className="navbar sticky">
         <div className="container">
           <div className="brand">HelmaGhorbani</div>
-          <ul className="nav-links">
+
+          <div className="menu-toggle " onClick={toggleMenu}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+
+
+          <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
