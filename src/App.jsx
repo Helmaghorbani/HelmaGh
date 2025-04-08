@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, {useEffect} from 'react'
 import './assets/script'
 import './App.css'
 import { motion } from 'framer-motion'
@@ -19,29 +19,12 @@ function App() {
     }
   }, []); 
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);  
-  };
-
   return (
     <>
-           <nav className="navbar sticky">
+      <nav className="navbar sticky">
         <div className="container">
           <div className="brand">HelmaGhorbani</div>
-
-          <div
-  className={`menu-toggle ${isOpen ? 'open' : ''}`}
-  onClick={toggleMenu}
->
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-          </div>  
-
-
-          <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <ul className="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
