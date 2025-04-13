@@ -78,7 +78,7 @@ function App() {
           <p>Creating realistic and interactive 3D models to elevate the digital experience.</p>
         </div>
 
-        <a href="src/assets/pdf/CV Resume (2).pdf" download className="download-btn">Download Resume</a>
+        <a href="pdf/HelmaGhorbani-resume.pdf" download className="download-btn">Download Resume</a>
       </div>
     </div>
   </div>
