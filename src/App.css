@@ -261,7 +261,6 @@ html, body, #root {
   transform: scale(1.05);
 }
 
-/* انیمیشن */
 @keyframes fadeInUp {
   to {
     opacity: 1;
